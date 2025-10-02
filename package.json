@@ -1,0 +1,23 @@
+{
+  "name": "waste-recycling-tracker",
+  "version": "1.0.0",
+  "description": "Recycling awareness dashboard for tracking waste categorization and promoting recycling habits",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "client:dev": "cd client && npm start",
+    "server:dev": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm ci && cd client && npm ci && cd ../server && npm ci",
+    "test": "cd server && npm test && cd ../client && npm test",
+    "shutdown": "curl -X POST http://localhost:3001/admin/shutdown || echo Server may already be stopped",
+    "stop": "npm run shutdown"
+  },
+  "keywords": ["recycling", "scada", "dashboard", "waste-management", "sustainability"],
+  "author": "Recycling Awareness Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3"
+  }
+}
