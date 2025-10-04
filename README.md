@@ -41,7 +41,7 @@ A comprehensive waste tracking and recycling management system with real-time mo
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/cgninety/waste-management-system.git
+   git clone https://github.com/cgninety/Waste_Tracker.git
    cd waste-management-system
    ```
 
